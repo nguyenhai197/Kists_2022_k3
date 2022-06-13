@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Du lich</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style type="text/css">
+
+	* {
+		text-decoration: none;
+		list-style: none;
+		object-fit: none;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+
+	}
+
+	#wapper {
+		margin: 0 auto;
+		width: 1200px;
+		background-color: #f7f7f7;
+	}
+	#header {
+		width: 100%;
+		display: flex;
+		height: 250px;
+
+	}
+	#logo {
+		width: 20%;
+	}
+
+	#logo_img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#banner_img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#banner {
+		width: 80%;
+	}
+
+	#menu {
+		width: 100%;
+		height: 60px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#menu_item:hover a {
+		color: #FF0000;
+
+	}
+	#menu_item {
+		padding: 0px 20px;
+
+	}
+	#menu_item:hover {
+		background-color: #DDDDDD;
+	}
+
+	#tiem li a {
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	#tiem li:hover a {
+		color: #red;
+	}
+	#tiem li {
+		width: 100%;
+		line-height: 40px;
+		height: 40px;
+		text-align: center;
+	}
+
+
+
+
+	/*Content*/
+
+
+
+	#main_content {
+		width: 100%;
+
+	}
+	#content {
+		width: 60%;
+		float: left;
+	}
+
+	.content_item {
+		width: 47%;
+		float: left;
+		text-align: center;
+		margin: 10px;
+		height: 100%;
+		box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.06), 0px 2.01027px 3.57381px rgba(0, 0, 0, 0.03), 0px 0.598509px 1.06402px rgba(0, 0, 0, 0.0161557);
+		border-radius: 22px;
+		padding: 10px 0px;
+	}
+
+	.image_item {
+		width: 100%;
+		height: 230px;
+		aspect-radio:  4/3; /* dat ti le anh 4/3 */
+		border-radius: 22px;
+	}
+
+
+	.image_item:hover {
+		transform: scale(1.1);
+		transition: 1000ms ease-in-out;
+
+	}
+
+
+	.image_frame {
+		border-radius: 22px;
+		width: 100%;
+		overflow: hidden;
+		aspect-radio:  4/3;
+	}
+
+	.item_description {
+		text-align: justify;
+		padding: 3px 25px;
+		height: 60px;
+		overflow-y:scroll ;
+	}
+	.item_title {
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
+		height: 40px;
+	}
+	.new_price {
+		color: blue;
+		font-size: 22px;
+	}
+
+	.old_price {
+		color: #f30;
+		font-size: 18px;
+		text-decoration: line-through;
+	}
+	button {
+		width: 60%;
+		height: 40px;
+		font-size: 18px;
+		border-radius: 5px;
+		border: none;
+		background: linear-gradient(125.79deg, #B3C9BC 0.49%, #508189 96.18%);
+		cursor: pointer;
+	}
+	button:hover {
+		background-color: 0px 9px 16px rgba(0, 0, 0, 0.06), 0px 2.01027px 3.57381px rgba(0, 0, 0, 0.03), 0px 0.598509px 1.06402px rgba(0, 0, 0, 0.0161557);;
+	}
+
+	#left, #right {
+		width: 20%;
+		float: left;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+
+
+</style>
+
+<body>
+	<div id="wapper">
+		<div id="header">
+			<div id="logo">
+				<img id="logo_img" src="image/logo.jpg">
+			</div>
+			<div id="banner">
+				<img id="banner_img" src="image/banner.jpeg">
+			</div>
+		</div>
+		<div id="menu">
+			<ul id="tiem">
+				<li id="menu_item">
+					<a href="">Trang chủ</a>
+				</li>
+			</ul>
+			<ul  id="tiem">
+				<li id="menu_item">
+					<a href="">Địa điểm</a>
+				</li>
+			</ul>
+			<ul  id="tiem">
+				<li id="menu_item">
+					<a href="">Khách sạn</a>
+				</li>
+			</ul>
+			<ul  id="tiem">
+				<li id="menu_item">
+					<a href="">Chuyến bay</a>
+				</li>
+			</ul>
+			<ul  id="tiem">
+				<li id="menu_item">
+					<a href="">Khuyến mại</a>
+				</li>
+			</ul>
+			<ul  id="tiem">
+				<li id="menu_item">
+					<a href="">Liên hệ</a>
+				</li>
+			</ul>
+		</div>
+		<div id="main_content">
+			<div id="left">
+				<dl>
+					<dt>
+						Dia diem
+						<dd>Vinh ha long</dd>
+						<dd>Chua bai dinh</dd>
+						<dd>Sapa</dd>
+					</dt>
+					<dt>
+						Khach san
+						<dd>FLC</dd>
+						<dd>Muong Thang</dd>
+						<dd>Cong doan</dd>
+					</dt>
+					<dt>
+						Chuyen bay
+						<dd>Ha noi - Da nang</dd>
+						<dd>Da nang - Hai phong</dd>
+						<dd>HN - TP HCM</dd>
+					</dt>
+					<dt>
+						Khach san
+						<dd>FLC</dd>
+						<dd>Muong Thang</dd>
+						<dd>Cong doan</dd>
+					</dt>
+					<dt>
+						Khach san
+						<dd>FLC</dd>
+						<dd>Muong Thang</dd>
+						<dd>Cong doan</dd>
+					</dt>
+				</dl>
+			</div>
+			<div id="content">
+				<div class="content_item" >
+					<div class="image_frame" >
+						<img src="image/photo06.jfif" class="image_item">
+					</div>
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch.</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+				<div class="content_item">
+					<img src="image/photo01.jfif" class="image_item">
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia.
+						ủa dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia
+					ủa dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+				<div class="content_item">
+					<img src="image/photo02.jfif" class="image_item">
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia.</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+				<div class="content_item">
+					<img src="image/photo03.jfif" class="image_item">
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia.</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+				<div class="content_item">
+					<img src="image/photo04.jfif" class="image_item">
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia.</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+				<div class="content_item">
+					<img src="image/photo05.jfif" class="image_item">
+					<p class="item_title">Ha Noi Ha Long 3 ngay 4 dem</p>
+					<p class="item_description">Hà Nội có lịch sử lâu đời cùng văn hóa truyền thống đậm đà bản sắc của dân tộc Việt Nam là địa điểm du lịch vô cùng quyến rũ. Mảnh đất thủ đô là nơi có nhiều di tích nhất tại Việt Nam, với 3840 di tích và 1164 di tích cấp quốc gia.</p>
+					<p><span class="new_price">800.000 VND</span>
+						<span class="old_price">1.000.000 VND</span>
+					</p>
+					<button>Them vao gio hang</button>
+				</div>
+			</div>
+			<div id="right">
+				right
+			</div>
+		</div>
+		<div id="footer">
+			ban quyen thuoc ve multicampus
+		</div>
+	</div>
+	
+</body>
+</html>
