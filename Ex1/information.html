@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/information.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://trianh.edu.vn/wp-content/uploads/2021/02/Layer-71.png" alt="logo-page" width="200" height="85">
+        </div>
+        <div class="header_menu">
+            <ul class="menu_item">
+                <li>
+                    <a href="">Trang chu</a>
+                    <a href="">San pham</a>
+                    <a href="">Cua hang</a>
+                    <a href="">Lien he</a>
+                    <a href="">Login</a>
+                </li>
+            </ul>
+            <div class="header_language">
+                <img class="img_item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/300px-Flag_of_the_United_Kingdom.svg.png" alt="vn" width="50" height="40">
+                <img class="img_item" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/225px-Flag_of_Vietnam.svg.png" alt="eg" width="50" height="40">
+                <div style="display: flex;">
+                    <i style="font-size: 33px" class='bx bxs-cart-alt'><sup>20</sup></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container_s">
+            <div class="container_left">
+                <div class="img_container">
+                    <img src="http://demo.trianh.edu.vn/images/new_products/product_10.jpg" alt="" id="imgBox">
+                </div>
+                <div class="product_img">
+                    <img src="http://demo.trianh.edu.vn/images/new_products/product_11.jpg" alt="" onclick="myFunction(this)">
+                    <img src="http://demo.trianh.edu.vn/images/new_products/product_01.jpg" alt="" onclick="myFunction(this)">
+                    <img src="http://demo.trianh.edu.vn/images/products/hoakho.jpg" alt="" onclick="myFunction(this)">
+                    <img src="	http://demo.trianh.edu.vn/images/products/hoa5.jpg" alt="" onclick="myFunction(this)">
+                    <img src="http://demo.trianh.edu.vn/images/products/hoatang.jpg" alt="" onclick="myFunction(this)">
+                </div>
+            </div>
+            
+            <div class="container_rights">
+                <div  class="container_right_title">
+                    <span>Trang chu / Hoa Kho</span>
+                    <h3>HOA KHO TANG KEM</h3>
+                </div>
+                <div class="container_right_price">
+                    <div class="container_right_price_item" >
+                        <span>450.000D</span><br>
+                        <select name="mau" id="mau" >
+                            <option value="Chon mau">Chon mau</option>
+                        </select>
+                    </div>
+                    <div class="container_right_price_submit">
+                        <input type="text" >
+                        <input type="submit" value="Them vao gio hang" class="submit">
+                    </div>
+                </div>
+                <div class="container_right_products">
+                    <div class="container_right_products_title">
+                        <span>Chi Tiet San Pham</span>
+                    </div>
+                    <div class="container_right_products_item">
+                        <div class="container_right_products_item_a">
+                            <a style="border: 1px solid rgb(175, 172, 172); border-bottom: none;">Thong tin chung</a>
+                            <a style="border-bottom: 1px solid rgb(175, 172, 172);">Thong tin chi tiet</a>
+                            <a style="border-bottom: 1px solid rgb(175, 172, 172);">Danh gia</a>
+                        </div>
+                        <div class="container_right_products_item_input">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Thể loại: Hoa tình yêu" ></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>CÁC ĐỐI TÁC</h2>
+        <img src="http://demo.trianh.edu.vn/images/flower_string.png" alt="" width="30%">
+    </div>
+    <nav>
+        <div class="container_right">
+            <div class="container_list">
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/products/hoa3.png" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/products/hoakho.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/new_products/product_01.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="	http://demo.trianh.edu.vn/images/new_products/product_02.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/new_products/product_03.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/new_products/product_12.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/new_products/product_05.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="	http://demo.trianh.edu.vn/images/new_products/product_06.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_products">
+                    <div class="products_image product_hover">
+                        <img src="http://demo.trianh.edu.vn/images/new_products/product_07.jpg" alt="">
+                        <div class="products_hover_icon">
+                            <i class='bx bx-search bx-tada' ></i>
+                            <i class='bx bxs-heart bx-tada' ></i>
+                            <i class='bx bx-slider bx-tada' ></i>
+                        </div>
+                        <div class="products_title">
+                            <p>HOA SINH NHẬT</p>
+                            <p>
+                                <span class="price">200.000</span>
+                                <span class="price_sell">250.000</span>
+                            </p>
+                        </div>
+                        <div class="icon_cart">
+                            <i class='bx bxs-cart-alt bx-tada' ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h2>CÁC ĐỐI TÁC</h2>
+        <img src="http://demo.trianh.edu.vn/images/flower_string.png" alt="" width="30%">
+    </div>
+
+        <div class="container_list_logo"> 
+            <div class="contrainer_logo">
+                <img src="./image/IMG_5677.PNG" alt="">
+            </div>
+            <div class="contrainer_logo">
+                <img src="./image/IMG_5678.PNG" alt="">
+            </div>
+            <div class="contrainer_logo">
+                <img src="./image/IMG_5681.PNG" alt="">
+            </div>
+            <div class="contrainer_logo">
+                <img src="./image/IMG_5685.PNG" alt="">
+            </div>
+            <div class="contrainer_logo">
+                <img src="./image/IMG_5683.PNG" alt="">
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer_left">
+            <div class="left">
+
+                <h3>MỞ RỘNG</h3>
+                <ul>
+                    <li>
+                        <a href="">Nhãn hiệu</a><br>
+                        <a href="">Phiếu quà tặng</a><br>
+                        <a href="">Chi nhánh</a><br>
+                        <a href="">Đặc biệt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="left">
+                <h3>THÔNG TIN</h3>
+                <ul>
+                    <li>
+                        <a href="">Về chúng tôi</a><br>
+                        <a href="">Chính sách bảo mật</a><br>
+                        <a href="">Điều khoản điều kiện</a><br>
+                        <a href="">Liên hệ</a><br>
+                        <a href="">Tìm chúng tôi</a><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_center">
+            <div class="left">
+                <h3>TAI KHOẢN</h3>
+                <ul>
+                    <li>
+                        <a href="">Tài khoản của tôi</a><br>
+                        <a href="">Danh sách mua hàng</a><br>
+                        <a href="">Lịch sử mua hàng</a><br>
+                        <a href="">Bản tin</a><br>
+                        <a href="">Lợi nhuận</a><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_right">
+            <div class="left">
+                <h3>CONTACT US</h3>
+                <p><i class='bx bxs-map' ></i> Phú Đô,Nam Từ Liêm Hà Nôi</p><br>
+                <p><i class='bx bx-envelope' ></i> hainvth1998@fpt.edu.vn</p><br>
+                <p><i class='bx bx-phone' ></i> 0398590088</p>
+                <img src="	http://demo.trianh.edu.vn/images/products/payment.png   " alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./index.js"></script>
+
+</html>

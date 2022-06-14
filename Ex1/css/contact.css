@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    max-width: 1140px;
+    width: 1150px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.header_logo {
+    width: 20%;
+    height: 100px;
+}
+
+.header_menu {
+    /*background-color: #ff3300;*/
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu span {
+   margin: auto 0;
+}
+.header_logo_cart i {
+    font-size: 35px;
+    position: relative;
+}
+.header_logo_cart {
+    margin: auto 0;
+    display: flex;
+}
+
+.header_logo_cart i::before {
+    content: 20;
+}
+
+
+
+sup {
+    right: 105px;
+    font-size: 14px;
+    height: min-content;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.wapper_left {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    /*background-color: #f30;*/
+}
+
+.wapper_right {
+    text-align: center;
+    width: 50%;
+}
+
+.address {
+    padding: 15px 25px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 16px;
+}
+.address p a:hover{
+    text-decoration:underline;
+}
+.wapper_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    padding: 15px 0;
+}
+.wapper_info input {
+    height: 37px;
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid #333;
+    text-indent: 20px;
+}
+
+.wapper_info i {
+    font-size: 15px;
+    border: 1px solid#333;
+    border-radius: 5px;
+    margin:auto 0;
+    padding: 10px 10px;
+}
+
+::placeholder {
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+.wapper_textaria {
+    width: 94%;
+    margin-left: 16px;
+}
+.wapper_button {
+    display: flex;
+    left: 0;
+    width: 80%;
+    border: 1px solid #bbbaba;
+}
+textarea {
+    width: 93%;
+    height: 200px;
+    padding: 15px 0;
+}
+.wapper_button button {
+    border: none;
+    padding: 10px 15px;
+    background-color: transparent;
+
+}
+
+.wapper_icon  {
+    align-items: center;
+    display: flex;
+    border: 1px solid #333;
+    width: 100%;
+}
+
+.wapper_icon i {
+    font-size: 25px;
+}
+
+.wapper_btn button:hover {
+    background-color: rgb(200,203,207);
+    
+}
+i:hover {
+    color: black;
+}
+
+.wapper_btn button {
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+}
+
+.wapper_button button:hover {
+    background-color: rgb(200,203,207);
+}
+
+.wapper_buttonn {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    width: 94%;
+    margin-left: 16px;
+    background-color: #fff;
+    flex-shrink: 0;
+    border-bottom-right-radius: 1px solid #333;
+    align-items: center;
+}
